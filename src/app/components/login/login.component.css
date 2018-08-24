@@ -16,25 +16,26 @@ form {
     height: fit-content;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 body {
     background-color: #F6F4F4;
     width: 100%;
-    align-items: center;
+    text-align: center;
 }
 
 .container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background: #FFFFFF;
     border-radius: 20px;
     width: fit-content;
-    position: absolute;
-    left: 25%;
-    top: 25%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .body {
@@ -49,8 +50,6 @@ input#email {
     outline: 0;
     font-size: 20px;
     padding: 5px 10px;
-    /* margin-left: 5em;
-    margin-right: 8em; */
     outline: 0;
     border: 0px;
     border-bottom: 1px solid rgba(21, 20, 20, 0.27);
@@ -58,7 +57,7 @@ input#email {
 }
 
 label#label {
-    margin-left: 6.5em;
+    margin-left: 0.5em;
     margin-top: 10px;
     color: rgba(21, 20, 20, 0.27);
     font-family: Roboto;
@@ -107,4 +106,8 @@ p {
     margin-left: -30px;
     color: white;
     margin-bottom: 10%;
+}
+
+h1 {
+    color: #FFFFFF;
 }
